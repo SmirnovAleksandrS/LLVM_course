@@ -1,0 +1,125 @@
+# top patterns n=1
+1	25636	load
+1	15509	br
+1	15327	sext
+1	15327	getelementptr
+1	10312	store
+1	5170	icmp
+1	5139	add
+1	65	call
+1	62	alloca
+
+# top patterns n=2
+2	15418	br load
+2	15327	load sext
+2	15327	sext getelementptr
+2	10279	store br
+2	10218	getelementptr load
+2	5170	load icmp
+2	5170	icmp br
+2	5139	load add
+2	5139	add store
+2	5109	getelementptr store
+2	61	alloca alloca
+2	34	call store
+2	32	store call
+2	31	br call
+2	30	br store
+2	30	call br
+2	30	br br
+2	1	alloca call
+2	1	call call
+
+# top patterns n=3
+3	15327	load sext getelementptr
+3	10279	store br load
+3	10218	sext getelementptr load
+3	10218	getelementptr load sext
+3	5170	br load icmp
+3	5170	load icmp br
+3	5139	br load add
+3	5139	load add store
+3	5138	add store br
+3	5109	icmp br load
+3	5109	br load sext
+3	5109	sext getelementptr store
+3	5109	getelementptr store br
+3	60	alloca alloca alloca
+3	32	call store br
+3	31	icmp br call
+3	31	br call store
+3	30	icmp br store
+3	30	br store call
+3	30	store call br
+3	30	call br br
+3	30	br br load
+3	2	call store call
+3	2	store call store
+3	1	alloca alloca call
+3	1	alloca call call
+3	1	call call store
+
+# top patterns n=4
+4	10218	load sext getelementptr load
+4	10218	sext getelementptr load sext
+4	10218	getelementptr load sext getelementptr
+4	5170	store br load icmp
+4	5170	br load icmp br
+4	5139	br load add store
+4	5138	load add store br
+4	5138	add store br load
+4	5109	load icmp br load
+4	5109	icmp br load sext
+4	5109	br load sext getelementptr
+4	5109	load sext getelementptr store
+4	5109	sext getelementptr store br
+4	5109	getelementptr store br load
+4	5109	store br load add
+4	59	alloca alloca alloca alloca
+4	32	call store br load
+4	31	load icmp br call
+4	31	icmp br call store
+4	31	br call store br
+4	30	load icmp br store
+4	30	icmp br store call
+4	30	br store call br
+4	30	store call br br
+4	30	call br br load
+4	30	br br load add
+4	2	call store call store
+4	1	alloca alloca alloca call
+4	1	alloca alloca call call
+4	1	alloca call call store
+
+# top patterns n=5
+5	10218	load sext getelementptr load sext
+5	10218	sext getelementptr load sext getelementptr
+5	5170	store br load icmp br
+5	5138	br load add store br
+5	5138	load add store br load
+5	5138	add store br load icmp
+5	5109	br load icmp br load
+5	5109	load icmp br load sext
+5	5109	icmp br load sext getelementptr
+5	5109	br load sext getelementptr load
+5	5109	getelementptr load sext getelementptr load
+5	5109	getelementptr load sext getelementptr store
+5	5109	load sext getelementptr store br
+5	5109	sext getelementptr store br load
+5	5109	getelementptr store br load add
+5	5109	store br load add store
+5	58	alloca alloca alloca alloca alloca
+5	32	call store br load icmp
+5	31	br load icmp br call
+5	31	load icmp br call store
+5	31	icmp br call store br
+5	31	br call store br load
+5	30	br load icmp br store
+5	30	load icmp br store call
+5	30	icmp br store call br
+5	30	br store call br br
+5	30	store call br br load
+5	30	call br br load add
+5	30	br br load add store
+5	1	alloca alloca alloca alloca call
+
